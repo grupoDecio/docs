@@ -1,0 +1,6 @@
+site_name: Grupo Décio Documentação TOTVS Fluig
+site_url: https://decioadministracao137421.fluig.cloudtotvs.com.br/portal/p/1/home
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
