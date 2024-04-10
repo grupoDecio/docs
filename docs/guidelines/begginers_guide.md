@@ -11,5 +11,3 @@ Clique em “Help” na barra superior do Eclipse, do lado direito de Window
 Clique em “Install New Software”
 
 Clique em “Add…”
-
-### Olá Mundo
