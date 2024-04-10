@@ -9,6 +9,13 @@ jobs:
     name: Deploy da Documentação
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Git
+        env:
+          GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+        run: |
+          git config --global user.name "${GIT_USER_NAME}"
+          git config --global user.email "${GIT_USER_EMAIL}"
       - name: Checkout main
         uses: actions/checkout@v2
 
