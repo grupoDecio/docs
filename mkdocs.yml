@@ -1,4 +1,7 @@
 site_name: TOTVS Fluig - Grupo Décio
+repo_url: https://github.com/grupoDecio/docs
+repo_name: grupoDecio
+edit_uri: edit/main/docs
 nav:
   - Inicio: index.md
   - Guidelines:
@@ -10,5 +13,9 @@ nav:
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
-  name: readthedocs
+  name: material
   nav_style: dark
+
+plugins:
+  - git-revision-date
+  - search
