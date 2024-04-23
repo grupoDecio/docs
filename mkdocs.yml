@@ -8,6 +8,7 @@ nav:
     - 'Guia do Iniciante': 'guidelines/begginers_guide.md'
   - Datasets:
     - 'Genérico': 'datasets/ds_generico.md'
+    - 'Usuários por Grupo': 'datasets/dsUsuariosPorGrupo.md'
   - Repository:
     - 'GitHub': 'repository/github.md'
   - Sobre: about.md
