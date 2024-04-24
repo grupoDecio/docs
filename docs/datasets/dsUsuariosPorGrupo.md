@@ -7,6 +7,8 @@ O campo que estaremos nos baseando para a construção desse exemplo será o Ges
 
 ## Campo no HTML:
 ````
+
+<label title="Grupo 22-TI_ACESSOS-GESTOR_IMEDIATO">Gestor Imediato</label><span class="required text-danger"><strong>*</strong></span>
 <input title="ds_atendente_acessos" class="form-control" placeholder="Gestor Imediato" type="zoom" zoomvalue="colleagueId" 
 dataset="dsUsuariosPorGrupo" datasetvalue="colleagueName" id="gestor_altAcesso" name="gestor_altAcesso" data-zoom="{
                     'displayKey':'colleagueName',
