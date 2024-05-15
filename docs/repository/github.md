@@ -1,4 +1,3 @@
-
 # Guia do Iniciante: Desbravando o Git
 
 Bem-vindo ao Mundo do Controle de Versão com Git
@@ -52,24 +51,27 @@ Mas não em projetos de grandes proporções onde existem vários desenvolvedore
 O Git Flow nada mais é que um modelo de contribuições que é amplamente utilizado para o desenvolvimento colaborativo, e ele se baseia em duas branchs principais:
 
 ![Git Flow](../assets/gitflow.png)
-````
+
+```
 master -> Que representa o estado atual de todos os processos correntes na produção
 develop -> Derivada da master, é a branch onde iremos enviar nossas alterações durante as semanas, para que no final, após todos os testes necessários, realizemos o merge na master.
-````
+```
 
 ### 1.1. Nomenclatura para Branchs e commits
 
 Neste repositório nós organizamos as contribuições baseadas: no tipo de alteração, o processo e a data, sendo:
 
 Uma branch de alteração:
-````
-update/processo21_01-04-24
-````
-Uma branch de correção de bugs:
-````
-bugfix/processo21_01-04-24
-````
 
+```
+update/processo21_01-04-24
+```
+
+Uma branch de correção de bugs:
+
+```
+bugfix/processo21_01-04-24
+```
 
 ### 1.2. Quickstart
 
@@ -77,38 +79,56 @@ Sempre que lhe for passado uma alteração pra ser realizada, o processo é semp
 
 A Branch Master sempre será atualizada com os processos correntes da produção e a develop irá persistir essas alterações, então você deve:
 
-1. Voltar pra branch develop. (Caso não saiba em qual branch você esta: git status)
-````
--> git checkout develop
-````
-2. Puxar todas as alterações do repositório remoto.
-````
--> git pull
-````
+1.2.1 Voltar pra branch develop. (Caso não saiba em qual branch você esta: git status)
 
-3. Agora que sua maquina local está atualizada e persistindo os dados do repositório remoto, você cria uma nova branch.
-````
+```
+-> git checkout develop
+```
+
+1.2.2 Puxar todas as alterações do repositório remoto.
+
+```
+-> git pull
+```
+
+1.2.3 Agora que sua maquina local está atualizada e persistindo os dados do repositório remoto, você cria uma nova branch.
+
+```
 -> git checkout -b "update/processo23_15-04-24"
-````
-4. Você irá realizar todas as alterações nessa branch, e quando finalizar:
+```
+
+1.2.4 Você irá realizar todas as alterações nessa branch, e quando finalizar:
 
 Você pode rodar:
-````
+
+```
 -> git status (Isso irá lhe permitir ver tudo que foi identificado como alterado, removido e afins)
-````
+```
 
-````
+```
 -> git add . (Pra adicionar todos os arquivos que sofreram alterações pra serem inseridos no commit)
-````
-ou
-````
--> git add caminho/do/arquivo.js (Pra adicionar arquivos especificos)
-````
+```
 
-5. Quando inserir todos os arquivos que deseja enviar para o commit, faça:
-````
+ou
+
+```
+-> git add caminho/do/arquivo.js (Pra adicionar arquivos especificos)
+```
+
+1.2.5 Quando inserir todos os arquivos que deseja enviar para o commit, faça:
+
+```
 -> git commit -m "update: Mensagem do commit"
-````
-6. Por ultimo, envie as alterações pro servidor remoto:
-````
--> git push (O primeiro commit de uma nova branch o comando é diferente: git push --set-upstream origin update/processo23_15-04-24)
+```
+
+1.2.6 Por ultimo, envie as alterações pro servidor remoto:
+
+```
+-> git push
+```
+
+(O primeiro commit a partir de uma nova branch, sempre irá lhe informar um comando diferente)
+
+```
+git push --set-upstream origin update/processo23_15-04-24)
+```

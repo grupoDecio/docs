@@ -5,12 +5,14 @@ edit_uri: edit/main/docs
 nav:
   - Inicio: index.md
   - Guidelines:
-    - 'Guia do Iniciante': 'guidelines/begginers_guide.md'
+      - "Guia do Iniciante": "guidelines/begginers_guide.md"
+      - "Guia de Configuração de Processos Git": "guidelines/fluig-git_guide.md"
+      - "Guia de Configuração da Documentação": "guidelines/mkdocs_guide.md"
   - Datasets:
-    - 'Genérico': 'datasets/ds_generico.md'
-    - 'Usuários por Grupo': 'datasets/dsUsuariosPorGrupo.md'
+      - "Genérico": "datasets/ds_generico.md"
+      - "Usuários por Grupo": "datasets/dsUsuariosPorGrupo.md"
   - Repository:
-    - 'GitHub': 'repository/github.md'
+      - "GitHub": "repository/github.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
