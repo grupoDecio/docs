@@ -50,7 +50,7 @@ Grupo do Processo: **03-CADASTRO_ITEM-GESTORES**
 
 Grupo do Processo: **05-DESLIGAMENTO-GESTORES**
 
-Papéis: **tratativa_analise_de_credito**, **tratativa_ti**, **tratativa_sesmt_ma**, **gestor_rh**.
+Papéis do Processo: **tratativa_analise_de_credito**, **tratativa_ti**, **tratativa_sesmt_ma**, **gestor_rh**.
 
 | Atividade |  Papél  |
 | --------- | :-----: |
@@ -87,69 +87,114 @@ Grupo do Processo: **07-AlterarCargo-Salrio-Depto-Setor-Gestor**
 
 ## 08 - FINANCEIRO
 
-Grupos:
+Grupo do Processo: **08-FINANCEIRO-GESTORES**
 
-Papéis:
+| Atividade |                Grupo                 |
+| --------- | :----------------------------------: |
+| 015       |           08-GERENCIA_ADM            |
+| 016       |       08-FINANCEIRO-TRATATIVA        |
+| 037       | 08-FINANCEIRO-CONTROLADORIA_CONTABIL |
+| 043       |       08-FINANCEIRO-TRATATIVA        |
 
 ## 09 - PROJETOS
 
-Grupos:
+Grupo do Processo: **09-PROJETOS-GESTORES**
 
-Papéis:
+| Atividade | Papél |
+| --------- | :---: |
+| 297       | admin |
 
 ## 10 - DESPESAS
 
-Grupos:
+Papéis do Processo: **gestor_processo_despesas**
 
-Papéis:
+| Atividade |     Grupo     |
+| --------- | :-----------: |
+| 004       |   Despesas    |
+| 004       | entrada_notas |
 
 ## 12 - CONTROLADORIA FISCAL
 
-Grupos:
+Grupo do Processo: **12-CONTROLADORIA_FISCAL-GESTORES**
 
-Papéis:
+| Atividade |                     Grupo                     |
+| --------- | :-------------------------------------------: |
+| 004       |        CONTROLADORIA_FISCAL-TRATATIVA         |
+| 029       |        CONTROLADORIA_FISCAL-APROVADOR         |
+| 074       | 12-CONTROLADORIA_FISCAL-SUPERVISAO-TRIBUTACAO |
 
 ## 15 - JURIDICO
 
-Grupos:
+Grupo do Processo: **15-JURIDICO-GESTOR**
 
-Papéis:
+| Atividade |    Grupo    |
+| --------- | :---------: |
+| 004       | 15-JURIDICO |
+| 063       | 15-JURIDICO |
+
+| Atividade | Papél |
+| --------- | :---: |
+| 113       | admin |
 
 ## 16 - CARTAO_VEXPENSES
 
-Grupos:
+Grupo do Processo: **16-CARTAO_VEXPENSES-GESTORES**
 
-Papéis:
+| Atividade |             Grupo              |
+| --------- | :----------------------------: |
+| 100       | 16-CARTAO_VEXPENSES-ATENDENTES |
 
 ## 19 - SESMT
 
-Grupos:
+Grupo do Processo: **19-SESMT-GESTORES**
 
-Papéis:
+| Atividade |         Grupo          |
+| --------- | :--------------------: |
+| 005       | 19-TRATATIVAS_SESMT_MA |
+| 011       | 19-TRATATIVAS_SESMT_MA |
+| 019       | 19-TRATATIVAS_SESMT_MA |
+
+| Atividade | Papél |
+| --------- | :---: |
+| 031       | admin |
 
 ## 21 - ERRO_LANCAMENTO_DE_NOTA_FISCAL
 
-Grupos:
+Grupo do Processo: **21-ERRO_LANCAMENTO_DE_NOTA_FISCAL-GESTORES**
 
-Papéis:
+| Atividade |                     Grupo                     |
+| --------- | :-------------------------------------------: |
+| 004       |         21-ERRO_NF-ATENDENTE_COMPRAS          |
+| 100       |         21-ERRO_NF-ATENDENTE_COMPRAS          |
+| 134       |          03-CADASTRO_ITEM-ATENDENTE           |
+| 136       |           04-ENTRADA_NF-ATENDENTES            |
+| 154       | 12-CONTROLADORIA_FISCAL-SUPERVISAO-TRIBUTACAO |
 
 ## 22 - TI_ACESSOS
 
-Grupos:
+Grupo do Processo: **22-TI_ACESSOS-GESTORES**
 
-Papéis:
+| Atividade |         Grupo         |
+| --------- | :-------------------: |
+| 005       |  22-TI_ACESSOS-ATUAR  |
+| 066       | 22-TI_ACESSOS-APROVAR |
 
 ## 23 - TI_GDIN
 
-Grupos:
+Grupo do Processo: **23-TI_GDIN-GESTORES**
 
-Papéis:
+| Atividade |         Grupo         |
+| --------- | :-------------------: |
+| 005       | 23-TI_GDIN-zAtendente |
+| 019       | 23-TI_GDIN-zAtendente |
+| 026       |     23-TI_GDIN_N1     |
+| 081       |     23-TI_GDIN_N1     |
 
 ## Ab. Solicitação - Abertura de Data Retroativa
 
-Grupos:
+Grupo do Processo: **Departamento_Pessoal**
 
-Papéis:
+Papéis do Processo: **gestor_rh**
 
 ## Ab. Solicitação - Adiantamento Salarial/13 Salario
 
