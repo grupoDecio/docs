@@ -11,8 +11,10 @@ nav:
   - Datasets:
       - "Genérico": "datasets/ds_generico.md"
       - "Usuários por Grupo": "datasets/dsUsuariosPorGrupo.md"
-  - Repository:
+  - Repositório:
       - "GitHub": "repository/github.md"
+  - Documentação:
+      - "Mapeamento: Grupos e Papéis": "documentacao/mapeamento_grupos-papeis.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
