@@ -63,15 +63,27 @@ Papéis: **tratativa_analise_de_credito**, **tratativa_ti**, **tratativa_sesmt_m
 
 ## 06 - ADVERTENCIA
 
-Grupos:
+Grupo do Processo: **06-MEDIDA_DISCIPLINAR_GESTORES**
 
-Papéis:
+| Atividade |              Grupo              |
+| --------- | :-----------------------------: |
+| 004       | 06-MEDIDA_DISCIPLINAR-ATENDENTE |
+| 016       |     06-ADVERTENCIA-DELEGAR      |
+| 034       | 06-MEDIDA_DISCIPLINAR-ATENDENTE |
+| 050       | 06-MEDIDA_DISCIPLINAR-ATENDENTE |
+
+| Atividade | Papél |
+| --------- | :---: |
+| 064       | admin |
 
 ## 07 - ALTERAR-CARGO-SALARIO-DEPTO-SETOR
 
-Grupos:
+Grupo do Processo: **07-AlterarCargo-Salrio-Depto-Setor-Gestor**
 
-Papéis:
+| Atividade |       Papél        |
+| --------- | :----------------: |
+| 062       | tratativa_sesmt_ma |
+| 078       | tratativa_sesmt_ma |
 
 ## 08 - FINANCEIRO
 
