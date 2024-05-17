@@ -190,44 +190,91 @@ Grupo do Processo: **23-TI_GDIN-GESTORES**
 | 026       |     23-TI_GDIN_N1     |
 | 081       |     23-TI_GDIN_N1     |
 
-## Ab. Solicitação - Abertura de Data Retroativa
-
-Grupo do Processo: **Departamento_Pessoal**
-
-Papéis do Processo: **gestor_rh**
-
 ## Ab. Solicitação - Adiantamento Salarial/13 Salario
 
-Grupos:
-
-Papéis:
+Papéis do Processo: **gestor_processo_rh_contabil**
 
 ## Ab. Solicitação - Administrativo Central
 
-Grupos:
+Papéis do Processo: **gestor_processo_adm**
 
-Papéis:
-
-## Ab. Solicitação - Agência Decio
-
-Grupos:
-
-Papéis:
+| Atividade |              Papél               |
+| --------- | :------------------------------: |
+| 004       | tratativa_administrativo_central |
+| 023       |    tratativa_entrada_de_notas    |
+| 030       |  tratativa_controladoria_fiscal  |
+| 030       |  tratativa_controladoria_fiscal  |
 
 ## Ab. Solicitação - Ajustes Unidades/Erros de Faturamento
 
-Grupos:
-
-Papéis:
+Papéis do Processo: **gestor_processo_ajustes_unidades**
 
 ## Ab. Solicitação - Alteração de Cargo/Salário/Departamento/Setor
 
-Grupos:
-
-Papéis:
+| Atividade |       Papél        |
+| --------- | :----------------: |
+| 078       | tratativa_sesmt_ma |
+| 062       | tratativa_sesmt_ma |
 
 ## Ab. Solicitação - Análise de Crédito
 
-Grupos:
+Papéis do Processo: **gestor_processo_analise**
 
-Papéis:
+| Atividade |            Papél             |
+| --------- | :--------------------------: |
+| 004       | tratativa_analise_de_credito |
+
+## Ab. Solicitação - Controladoria Contábil
+
+Papéis do Processo: **gestor_processo_controladoria**
+
+| Atividade |              Papél               |
+| --------- | :------------------------------: |
+| 004       | tratativa_controladoria_contabil |
+
+## Ab. Solicitação - Controladoria Cadastro de Itens
+
+Papéis do Processo: **gestor_processo_cadastro_itens**
+
+| Atividade |                   Papél                   |
+| --------- | :---------------------------------------: |
+| 004       | tratativa_controladoria_cadastro_de_itens |
+
+## Ab. Solicitação - Central de Compras
+
+Papéis do Processo: **gestor_processo_controladoria**
+
+| Atividade |            Papél             |
+| --------- | :--------------------------: |
+| 004       | tratativa_central_de_compras |
+
+## Subprocesso - SESMT
+
+Papéis do Processo: **Gestor_processo_sestma**
+
+| Atividade |       Papél        |
+| --------- | :----------------: |
+| 005       | tratativa_sesmt_ma |
+| 009       | tratativa_sesmt_ma |
+| 011       | tratativa_sesmt_ma |
+| 019       | tratativa_sesmt_ma |
+
+## Subprocesso - CadastroPF
+
+Papéis do Processo: **gestor_processo_adm**
+
+| Atividade |            Papél             |
+| --------- | :--------------------------: |
+| 004       | tratativa_analise_de_credito |
+
+## Subprocesso - TI
+
+Papéis do Processo: **gestor_processo_ti**
+
+| Atividade |        Grupo         |
+| --------- | :------------------: |
+| 007       | 01-TI_SISTEMAS-ATUAR |
+
+| Atividade |    Papél     |
+| --------- | :----------: |
+| 004       | tratativa_ti |
