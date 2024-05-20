@@ -224,6 +224,23 @@ Papéis do Processo: **gestor_processo_analise**
 | --------- | :--------------------------: |
 | 004       | tratativa_analise_de_credito |
 
+## Ab. Solicitação - Despesas
+
+Papéis do Processo: **gestor_processo_despesas**
+
+| Atividade |       Papél        |
+| --------- | :----------------: |
+| 004       | tratativa_despesas |
+
+## Ab. Solicitação - TI Interna
+
+Grupo do Processo: **Grupo_TI**
+Papéis do Processo: **gestor_processo_ti**
+
+| Atividade |       Papél        |
+| --------- | :----------------: |
+| 004       | tratativa_despesas |
+
 ## Ab. Solicitação - Controladoria Contábil
 
 Papéis do Processo: **gestor_processo_controladoria**
@@ -239,6 +256,28 @@ Papéis do Processo: **gestor_processo_cadastro_itens**
 | Atividade |                   Papél                   |
 | --------- | :---------------------------------------: |
 | 004       | tratativa_controladoria_cadastro_de_itens |
+
+## Ab. Solicitação - Controladoria Gerencial
+
+Papéis do Processo: **gestor_processo_controladoria**
+
+| Atividade |               Papél               |
+| --------- | :-------------------------------: |
+| 004       | tratativa_controladoria_gerencial |
+
+## Ab. Solicitação - Entrada de Notas
+
+Papéis do Processo: **gestor_entrada**
+
+| Atividade |           Papél            |
+| --------- | :------------------------: |
+| 004       | tratativa_entrada_de_notas |
+| 006       |     tratativa_despesas     |
+| 006       | tratativa_entrada_de_notas |
+| 018       |     tratativa_despesas     |
+| 021       | tratativa_entrada_de_notas |
+| 021       |     tratativa_despesas     |
+| 024       | tratativa_entrada_de_notas |
 
 ## Ab. Solicitação - Central de Compras
 
