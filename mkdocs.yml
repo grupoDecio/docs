@@ -13,8 +13,8 @@ nav:
       - "Usuários por Grupo": "datasets/dsUsuariosPorGrupo.md"
   - Repositório:
       - "GitHub": "repository/github.md"
-  - Documentação:
-      - "Mapeamento: Grupos e Papéis": "documentacao/mapeamento_grupos-papeis.md"
+  - Mapeamento:
+      - "Grupos e Papéis": "mapeamento/grupos-papeis.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
