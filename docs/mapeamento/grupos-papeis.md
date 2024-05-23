@@ -235,7 +235,6 @@ Papéis do Processo: **gestor_processo_despesas**
 ## Ab. Solicitação - TI Interna
 
 Grupo do Processo: **Grupo_TI**
-
 Papéis do Processo: **gestor_processo_ti**
 
 | Atividade |       Papél        |
@@ -280,56 +279,6 @@ Papéis do Processo: **gestor_entrada**
 | 021       |     tratativa_despesas     |
 | 024       | tratativa_entrada_de_notas |
 
-## Ab. Solicitação - Fechamento de Folha
-
-Grupo do Processo: **Departamento_Pessoal**
-
-Papéis do Processo: **gestor_processo_rh_contabil**
-
-## Ab. Solicitação - Férias
-
-Papéis do Processo: **gestor_processo_rh_contabil**
-
-## Ab. Solicitação - Lançamento de Notas Fiscais PF/PJ
-
-Papéis do Processo: **gestor_processo_rh_contabil**
-
-## Ab. Solicitação - Manutenção de Veículos
-
-| Atividade |          Papél           |
-| --------- | :----------------------: |
-| 004       | tratativa_decio_locadora |
-
-## Ab. Solicitação - Meio Ambiente
-
-Papéis do Processo: **Gestor_processo_sestma**
-
-| Atividade |       Papél        |
-| --------- | :----------------: |
-| 004       | tratativa_sesmt_ma |
-
-## Ab. Solicitação - Orçamento para Treinamento
-
-Papéis do Processo: **gestor_rh**
-
-| Atividade |     Papél     |
-| --------- | :-----------: |
-| 004       | TI_GRUPODECIO |
-
-## Ab. Solicitação - Pagamento Variáveis
-
-Papéis do Processo: **gestor_processo_rh_contabil**
-
-## Ab. Solicitação - Solicitações Diversas
-
-Papéis do Processo: **gestor_rh**
-
-## Ab. Solicitação - Validação do Ponto
-
-Grupo do Processo: **Departamento_Pessoal**
-
-Papéis do Processo: **gestor_rh**
-
 ## Ab. Solicitação - Central de Compras
 
 Papéis do Processo: **gestor_processo_controladoria**
@@ -368,37 +317,3 @@ Papéis do Processo: **gestor_processo_ti**
 | Atividade |    Papél     |
 | --------- | :----------: |
 | 004       | tratativa_ti |
-
-## Subprocesso Despesas - Folha
-
-Papéis do Processo: **gestor_subprocesso_despesas**
-
-| Atividade |       Papél        |
-| --------- | :----------------: |
-| 004       | tratativa_despesas |
-| 006       | tratativa_despesas |
-
-## Subprocesso Despesas - Pagamentos
-
-Papéis do Processo: **gestor_subprocesso_despesas**
-
-| Atividade |       Papél        |
-| --------- | :----------------: |
-| 007       | tratativa_despesas |
-| 013       | tratativa_despesas |
-
-## Atendimento Financeiro
-
-Grupo do Processo: **FINANCEIRO-GESTOR**
-
-| Atividade |          Papél          |
-| --------- | :---------------------: |
-| 004       | 08-FINANCEIRO-TRATATIVA |
-
-## Requisição de Pessoal/Admissão
-
-Papéis do Processo: **gestor_rh**
-
-## Rescisão RH
-
-**Não possui nenhum Grupo ou Papél**
