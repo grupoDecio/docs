@@ -15,6 +15,7 @@ nav:
       - "GitHub": "repository/github.md"
   - Mapeamento:
       - "Grupos e Papéis": "mapeamento/grupos-papeis.md"
+      - "Banco de Dados FLUIG": "mapeamento/banco-dados-fluig.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
