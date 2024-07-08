@@ -1,4 +1,4 @@
-# Valida usuário por grupo
+# Validação por grupo
 
 > Nesta sessão iremos utilizar uma função para realizar a validação se um determinado usuário pertence a um grupo.
 
