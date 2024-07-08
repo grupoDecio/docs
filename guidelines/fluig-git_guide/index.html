@@ -1,0 +1,1125 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../begginers_guide/">
+      
+      
+        <link rel="next" href="../mkdocs_guide/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Guia de configuração de processos GIT - TOTVS Fluig - Grupo Décio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-de-configuracao-e-contribuicao-de-processos-no-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TOTVS Fluig - Grupo Décio" class="md-header__button md-logo" aria-label="TOTVS Fluig - Grupo Décio" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TOTVS Fluig - Grupo Décio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia de configuração de processos GIT
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/grupoDecio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    grupoDecio
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TOTVS Fluig - Grupo Décio" class="md-nav__button md-logo" aria-label="TOTVS Fluig - Grupo Décio" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    TOTVS Fluig - Grupo Décio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/grupoDecio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    grupoDecio
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guidelines
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guidelines
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../begginers_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia do iniciante
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guia de configuração de processos GIT
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guia de configuração de processos GIT
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criacao-do-repositorio-do-processo-na-organizacao-do-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação do Repositório do Processo na Organização do GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Criação do Repositório do Processo na Organização do GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-baixar-o-arquivo-zip-do-processo-do-site-do-fluig-e-inseri-lo-na-pasta" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Baixar o arquivo ZIP do Processo do site do FLUIG e inseri-lo na pasta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-abrir-o-workspace-do-eclipse-dentro-da-pasta-do-repositorio-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Abrir o Workspace do Eclipse dentro da pasta do repositório Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-abra-a-perspectiva-do-fluig-no-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Abra a Perspectiva do FLUIG no Eclipse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cadastre-o-servidor-fluig-no-qual-voce-baixou-o-processozip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Cadastre o servidor FLUIG no qual você baixou o processo.zip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-importe-o-projeto-fluig-no-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Importe o Projeto FLUIG no Eclipse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-inserir-arquivos-para-o-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Inserir arquivos para o commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-realizar-o-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Realizar o commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidado-com-as-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUIDADO COM AS VERSÕES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CUIDADO COM AS VERSÕES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pois-imagine-a-situacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pois imagine a situação:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de configuração da documentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Datasets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Datasets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasets/ds_generico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genérico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datasets/dsUsuariosPorGrupo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usuários por grupo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Repositório
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Repositório
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repository/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mapeamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mapeamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/grupos-papeis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grupos e papéis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/banco-dados-fluig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Banco de dados FLUIG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funções
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Funções
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/validaPorGrupo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação por grupo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criacao-do-repositorio-do-processo-na-organizacao-do-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação do Repositório do Processo na Organização do GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Criação do Repositório do Processo na Organização do GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-baixar-o-arquivo-zip-do-processo-do-site-do-fluig-e-inseri-lo-na-pasta" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Baixar o arquivo ZIP do Processo do site do FLUIG e inseri-lo na pasta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-abrir-o-workspace-do-eclipse-dentro-da-pasta-do-repositorio-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Abrir o Workspace do Eclipse dentro da pasta do repositório Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-abra-a-perspectiva-do-fluig-no-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Abra a Perspectiva do FLUIG no Eclipse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cadastre-o-servidor-fluig-no-qual-voce-baixou-o-processozip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Cadastre o servidor FLUIG no qual você baixou o processo.zip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-importe-o-projeto-fluig-no-eclipse" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Importe o Projeto FLUIG no Eclipse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-inserir-arquivos-para-o-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Inserir arquivos para o commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-realizar-o-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Realizar o commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidado-com-as-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUIDADO COM AS VERSÕES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CUIDADO COM AS VERSÕES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pois-imagine-a-situacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pois imagine a situação:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="guia-de-configuracao-e-contribuicao-de-processos-no-github">Guia de Configuração e Contribuição de Processos no GitHub</h1>
+<blockquote>
+<p>Requisitos para esse Guia: Git instalado na sua maquina</p>
+</blockquote>
+<p>Quando se trata de Git, ele nos dá uma grande flexibilidade para configurar o repositório como bem desejarmos, portanto, que fique claro que:</p>
+<ul>
+<li>A TOTVS por si só não possui nenhuma recomendação nem diretiva sobre a utilização do GitHub pra controlar os processos do FLUIG, portanto esse processo foi desenhado da forma que melhor acreditamos servir o propósito de controle de versionamento, sendo passível de alterações e refinamentos.</li>
+</ul>
+<h2 id="1-criacao-do-repositorio-do-processo-na-organizacao-do-github">1. Criação do Repositório do Processo na Organização do GitHub</h2>
+<p><img alt="Imagem contendo a Organização do Grupo Décio no GitHub" src="../../assets/org_grupoDecio.png" /></p>
+<p>Depois de conseguir acesso a Organização do GitHub através do Gerente de Projetos você irá acessar a aba "Repositories/Repositórios" e irá selecionar o botão verde "Novo Repositório", como demonstrado abaixo:</p>
+<p><img alt="Imagem contendo um guia mostrando como selecionar a aba &quot;Repositórios&quot; e indicando o botão verde escrito &quot;Novo Repositório&quot;" src="../../assets/git_newRepo.png" />
+Para os processos novos, o padrão de nomenclatura segue:</p>
+<p><strong>form-XX-NOME_DO_PROCESSO</strong></p>
+<p><img alt="Imagem contendo repositórios com processos novos seguindo o padrão de nomenclatura" src="../../assets/nomenclatura_novosProcessos.png" /></p>
+<p>Para os processos antigos, o padrão é:</p>
+<p><strong>form-Ab.Solicitacao-NomeDoProcesso</strong></p>
+<p><img alt="Imagem contendo repositórios com processos antigos seguindo o padrão de nomenclatura" src="../../assets/nomenclatura_antigosProcessos.png" />
+Sendo assim, você irá inserir o nome e descrição do novo repositório de acordo com esses padrões:</p>
+<p><img alt="Imagem contendo a inserção do nome e descrição do novo repositório no GitHub" src="../../assets/git_creatingNewRepo.png" /></p>
+<p>O resto das configurações não é necessário alteração, crie o novo repositório. Após a criação do repositório, copie o URL do caminho para o repositório.</p>
+<p><img alt="Imagem contendo Botão de Copiar a URL do Repositório" src="../../assets/git_clickCopyURL.png" /></p>
+<p>Você abrirá um terminal, navegará até o diretório onde deseja armazenar esse repositório do Git, irá clonar o Repositório na sua maquina e entrar nessa pasta.</p>
+<p>(Meu sistema operacional é baseado no Linux, você pode fazer o mesmo através do Windows pelo Powershell ou no terminal do seu VSCode)</p>
+<p><img alt="Imagem contendo o comando git clone + URL, seguido pelo comando cd nomeDoRepositorioClonado" src="../../assets/git_cloningRepo.png" />
+Já possuímos o Repositório que irá armazenar nosso processo, agora iremos inserir os arquivos que desejamos que o git controle as alterações, você deve inicialmente:</p>
+<h3 id="11-baixar-o-arquivo-zip-do-processo-do-site-do-fluig-e-inseri-lo-na-pasta">1.1 Baixar o arquivo ZIP do Processo do site do FLUIG e inseri-lo na pasta</h3>
+<p>Processos-Fluig -&gt; Configurar Processos -&gt; Selecione o Processo -&gt; Exportar</p>
+<p><img alt="Imagem contendo o processo a ser exportado no site do FLUIG" src="../../assets/fluig_exportandoProcesso.png" /></p>
+<p>Será baixado um arquivo.zip, você deve inseri-lo na pasta do repositório do git que você criou, neste caso: form-99-TESTE</p>
+<p><img alt="Imagem contendo a pasta form-99-TESTE com o ZIP dentro da mesma" src="../../assets/git_inserindoZipNoRepo.png" /></p>
+<h3 id="12-abrir-o-workspace-do-eclipse-dentro-da-pasta-do-repositorio-git">1.2 Abrir o Workspace do Eclipse dentro da pasta do repositório Git</h3>
+<p>Você deve fazer isso para que os próximos desenvolvedores quando clonarem o projeto, já tenham a perspectiva do FLUIG aberta no Eclipse assim que trocarem o workspace do Eclipse para essa pasta contendo o repositório do Git, pois o Eclipse gera alguns arquivos e metadados de configuração de ambiente.</p>
+<p><img alt="Imagem contendo a janela de trocar o Workspace do Eclipse para a pasta form-99-TESTE" src="../../assets/eclipse_trocandoWorkspace.png" /></p>
+<p>A partir desse momento o processo é o mesmo:</p>
+<h3 id="13-abra-a-perspectiva-do-fluig-no-eclipse">1.3 Abra a Perspectiva do FLUIG no Eclipse</h3>
+<h3 id="14-cadastre-o-servidor-fluig-no-qual-voce-baixou-o-processozip">1.4 Cadastre o servidor FLUIG no qual você baixou o processo.zip</h3>
+<h3 id="15-importe-o-projeto-fluig-no-eclipse">1.5 Importe o Projeto FLUIG no Eclipse</h3>
+<p>Após tudo isso, você ficará com a pasta do repositório Git parecida com isso:</p>
+<p><img alt="Imagem contendo a pasta do repositório Git do Processo 99-TESTE com os arquivos" src="../../assets/git_repoPadrao.png" />
+Rodando o comando: git status</p>
+<p><img alt="Imagem rodando o comando git status" src="../../assets/git_statusCheck.png" /></p>
+<p>Observe que o Git está observando todas as alterações na nossa pasta, poderiamos enviar as alterações dessa forma, porém queremos que o git <strong>não envie</strong> para o repositório do git o arquivo: <strong>com.totvs.tds.ecm.dataservers</strong></p>
+<p>Que é responsável por se conectar ao servidor FLUIG, já que cada desenvolvedor pode ter um login diferente e essas credenciais ficariam visíveis e acessíveis para qualquer um com acesso aos repositórios, então por questões de segurança, vamos criar um arquivo <strong>.gitignore</strong></p>
+<p><img alt="Imagem contendo o arquivo .gitignore" src="../../assets/git_gitignore.png" /></p>
+<p>Essas duas linhas significam para o git que ele não deve olhar por alterações nesses arquivos, ou seja, eles não serão enviados para o repositório do git.</p>
+<p>Eu inseri também a pasta .metadata pois até o momento me parece ser uma pasta irrelevante e que esta sempre sendo alterada, poluindo a visualização na hora de realizar um commit pela inumera quantidade de pequenos arquivos de metadados que mudam constantemente.</p>
+<h3 id="16-inserir-arquivos-para-o-commit">1.6 Inserir arquivos para o commit</h3>
+<p><strong>Agora sim!</strong> Vamos realizar o nosso primeiro commit e enviar as alterações pro nosso repositório do GitHub</p>
+<p>No terminal:</p>
+<pre><code>git add .
+</code></pre>
+<p>Para adicionarmos todos os arquivos presentes (exceto aqueles ignorados pelo git)
+Vale salientar que você pode adicionar arquivos individuais, como por exemplo:</p>
+<pre><code>git add nomeDoArquivo.js
+</code></pre>
+<p>Rodando git status novamente, iremos ver todos os arquivos que irão para o nosso commit em verde</p>
+<p><img alt="Imagem contendo o status do commit a ser realizado" src="../../assets/git_addPonto.png" /></p>
+<p>No meu caso, esse processo pertence a homologação, então eu irei criar uma nova branch chamada homolog para armazenar o estado da homologação, caso seja um processo da produção, você realizaria o commit aqui mesmo, na main.</p>
+<p>Eu vou rodar:</p>
+<pre><code>git checkout -b homolog
+</code></pre>
+<p>Para criar uma branch chamada homolog e trocar para ela.</p>
+<p>O comando: git checkout faz com que você troque de branch</p>
+<p>Por exemplo:</p>
+<pre><code>git checkout main
+</code></pre>
+<p>Voltaria para a branch main, já que eu estaria na branch homolog</p>
+<p>(Tudo no git é baseado no conceito de arvore e galhos, a main é o tronco da nossa arvore, e todas as outras branchs são galhos)</p>
+<p>Quando você troca de branch, o git altera todos os arquivos de acordo com o estado daquela branch na qual o git está controlando</p>
+<p>Isto significa que:</p>
+<p>Se alguem criou um novo script de fluxo na branch homolog e commitou essas alterações para a mesma, se você der git checkout main, você poderá verificar que esse arquivo não estará mais presente no seu diretório, porque a branch que possui o script é a homolog e não a main.</p>
+<h3 id="17-realizar-o-commit">1.7 Realizar o commit</h3>
+<p>Depois de inserirmos os arquivos desejados pro nosso commit, na branch que queremos, iremos rodar:</p>
+<pre><code>git commit -m &quot;Mensagem do Commit&quot;
+</code></pre>
+<p>Observe que: Embora você tenha criado um commit, essas alterações ainda estão somente na sua maquina, isso porque você poderia trabalhar offline e quando conseguisse rede, enviar os commits criados para o repositório remoto através do comando:</p>
+<pre><code>git push
+</code></pre>
+<p>Quando é o primeiro commit de uma nova branch, o git sempre irá pedir para rodar um comando parecido com esse:</p>
+<pre><code>git push --set-upstream origin homolog
+</code></pre>
+<h2 id="cuidado-com-as-versoes">CUIDADO COM AS VERSÕES</h2>
+<p>Por esse mesmo motivo de podermos trabalhar offline que sempre que formos realizar uma alteração em um repositório git, é costume sempre rodarmos o comando:</p>
+<pre><code>git pull
+</code></pre>
+<p>Para puxarmos todas as alterações do repositório remoto daquela branch, garantindo que não iremos realizar alterações em uma versão antiga do projeto.</p>
+<h3 id="pois-imagine-a-situacao">Pois imagine a situação:</h3>
+<p>Eu como desenvolvedor de uma equipe ficticia, na semana passada criei uma branch chamada sprint4/guilherme para realizar as alterações que me foram requisitadas naquela sprint.</p>
+<p>No final da sprint após os testes, meu chefe deu merge nas alterações (enviou as alterações da minha branch e de meus colegas desenvolvedores para a main)</p>
+<p>Depois dessas alterações, a minha branch main ficou desatualizada, então:</p>
+<pre><code>git checkout main (Voltar para a main)
+git pull (Puxar as alterações, já que o estado da minha main localmente estava desatualizada)
+</code></pre>
+<p>Nesse momento, minha branch ficou atualizada, se eu criar uma nova branch a partir da main, quando eu realizar um commit e for necessário dar merge, não haverá conflito de versões.</p>
+<p><strong>Agora</strong>, imagine que eu não tenha dado pull, somente criei uma nova branch chamada:</p>
+<p>sprint5/guilherme</p>
+<p>no final da sprint, quando meu chefe fosse dar merge na main, ele veria que minha branch está atrasada em uma semana e provavelmente ele precisaria resolver conflitos de merge, que teria sido evitado se eu tivesse puxado as alterações que eu e meus colegas fizemos na sprint passada.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    2024-07-08
+  </span>
+
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:64067665+guisoaresdev@users.noreply.github.com">Guilherme Soares</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
