@@ -5,19 +5,19 @@ edit_uri: edit/main/docs
 nav:
   - Inicio: index.md
   - Guidelines:
-      - "Guia do Iniciante": "guidelines/begginers_guide.md"
-      - "Guia de Configuração de Processos Git": "guidelines/fluig-git_guide.md"
-      - "Guia de Configuração da Documentação": "guidelines/mkdocs_guide.md"
+      - "Guia do iniciante": "guidelines/begginers_guide.md"
+      - "Guia de configuração de processos GIT": "guidelines/fluig-git_guide.md"
+      - "Guia de configuração da documentação": "guidelines/mkdocs_guide.md"
   - Datasets:
       - "Genérico": "datasets/ds_generico.md"
-      - "Usuários por Grupo": "datasets/dsUsuariosPorGrupo.md"
+      - "Usuários por grupo": "datasets/dsUsuariosPorGrupo.md"
   - Repositório:
       - "GitHub": "repository/github.md"
   - Mapeamento:
-      - "Grupos e Papéis": "mapping/grupos-papeis.md"
-      - "Banco de Dados FLUIG": "mapping/banco-dados-fluig.md"
+      - "Grupos e papéis": "mapping/grupos-papeis.md"
+      - "Banco de dados FLUIG": "mapping/banco-dados-fluig.md"
   - Funções:
-      - "Validação por Grupo": "functions/validaPorGrupo.md"
+      - "Validação por grupo": "functions/validaPorGrupo.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
