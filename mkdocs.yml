@@ -14,8 +14,10 @@ nav:
   - Repositório:
       - "GitHub": "repository/github.md"
   - Mapeamento:
-      - "Grupos e Papéis": "mapeamento/grupos-papeis.md"
-      - "Banco de Dados FLUIG": "mapeamento/banco-dados-fluig.md"
+      - "Grupos e Papéis": "mapping/grupos-papeis.md"
+      - "Banco de Dados FLUIG": "mapping/banco-dados-fluig.md"
+  - Funções:
+      - "Validação por Grupo": "functions/validaPorGrupo.md"
   - Sobre: about.md
 theme:
   logo: img/favicon.ico
