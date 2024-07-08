@@ -56,7 +56,7 @@ FLUIG-ADMINISTRADORES
 
 ### 3. Validação
 
-Quando a função é executada sem nenhum erro, ela retorna 0, o que for diferente é um erro:
+Quando a função é executada sem nenhum erro ela retorna 0, se for diferente o usuário não pertence ao grupo:
 
 ```
   if (valida_usuario_grupo(user, "FLUIG-ADMINISTRADORES") == 0) {
